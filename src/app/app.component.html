@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <span>Minha App</span>
+    <span class="example-spacer"></span>
+    <button mat-button (click)="switchLanguage('en')">English</button>
+    <button mat-button (click)="switchLanguage('pt')">Português</button>
+  </mat-toolbar>
+  
+  <div style="text-align:center" class="content">
+    <h1>{{ 'welcome' | translate }}</h1>
+    <p>{{ 'description' | translate }}</p>
+  
+    <button mat-raised-button color="accent">Clique Aqui</button>
+    <mat-icon>home</mat-icon>
+  
+    <!-- Seção de Shrek -->
+    <div class="shrek-section">
+      <img src="assets/shrekLindo.jpg" alt="Shrek" class="shrek-image" />
+      <p class="shrek-description">
+        {{'shrek' | translate}}
+      </p>
+    </div>
+  </div>
+  
